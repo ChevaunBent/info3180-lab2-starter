@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="grid-container">
+    <div class="head">
+        <img class="img" src="{{ url_for( 'static', filename='img.jpg' )}}" alt="Chevaun's Profile Picture" />
+        <div class="personal">
+            <h1> Chevaun Bent </h1>
+            <h5> @wecodehard </h5>
+            <h5> Kingston, Jamaica </h5>
+            <h5> Joined {{ date_entry }} </h5>
+        </div>
+    </div>
+
+    <div class="about">
+        <div class="my-info">
+            <p> I have been doing this for a while now and the more i do it the better I become at it. </p>
+        </div>
+        <div class="stats">
+            <ul>
+                <li><span class="count">1016</span> posts</li>
+                <li><span class="count">1M</span> followers</li>
+                <li><span class="count">168</span> following</li>
+            </ul>
+        </div>
+        <div class="btn-div">
+            <button class="button">Follow</button>
+        </div>
+
+    </div>
+</div>
+{% endblock %}
